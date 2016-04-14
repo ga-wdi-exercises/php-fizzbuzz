@@ -2,15 +2,15 @@
 
 for($x = 1; $x <= 100; $x++){
   if($x % 15 == 0){
-    echo("FizzBuzz");
+    $output = "Fizz";
   }else if($x % 3 == 0){
-    echo("Fizz");
+    $output = "Buzz";
   }else if($x % 5 == 0){
-    echo("Buzz");
+    $output = "FizzBuzz";
   }else{
-    echo($x);
+    $output = $x;
   }
-  echo("\n");
+  file_put_contents("output.txt", $output . "\n", FILE_APPEND);
 }
 
 ?>
