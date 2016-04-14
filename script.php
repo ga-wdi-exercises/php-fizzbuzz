@@ -1,6 +1,6 @@
 <?php
 
-for($x = 1; $x <= 100; $x++){
+for($x = 1; $x <= $_GET["number"]; $x++){
   if($x % 15 == 0){
     $output = "Fizz";
   }else if($x % 3 == 0){
